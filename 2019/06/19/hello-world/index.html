@@ -341,6 +341,12 @@ Javascript Html Css Vue Node Nuxt Koa</p>
 		  </div>
 		<div class="footer-middle">
 		<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+		
+		<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+		
+		<span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+
   <script>
 	  var now = new Date(); 
 	  function createtime() { 
@@ -355,7 +361,7 @@ Javascript Html Css Vue Node Nuxt Koa</p>
 		  document.getElementById("timeDate").innerHTML = "本站已稳定运行 "+dnum+" 天 "; 
 		  document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
 	  } 
-  setInterval("createtime()",250);
+  	  setInterval("createtime()",250);
   </script>
 		</div>
 	  </div>
