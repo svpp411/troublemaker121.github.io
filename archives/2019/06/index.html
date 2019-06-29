@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
 
     <!--[if lt IE 9]>
@@ -11,22 +11,25 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<meta name="author" content="特立独行の小鱼儿">
+<meta name="author" content="小鱼儿">
 
 
 
+<meta name="description" content="Javascript Vue CSS HTML">
 <meta property="og:type" content="website">
-<meta property="og:title" content="特立独行的小鱼儿">
-<meta property="og:url" content="http://yoursite.com/archives/2019/06/index.html">
-<meta property="og:site_name" content="特立独行的小鱼儿">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:title" content="小鱼儿">
+<meta property="og:url" content="xiaoyucode.top/archives/2019/06/index.html">
+<meta property="og:site_name" content="小鱼儿">
+<meta property="og:description" content="Javascript Vue CSS HTML">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="特立独行的小鱼儿">
+<meta name="twitter:title" content="小鱼儿">
+<meta name="twitter:description" content="Javascript Vue CSS HTML">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-    <link rel="alternate" href="/atom.xml" title="特立独行的小鱼儿" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="小鱼儿" type="application/atom+xml">
 
 
 
@@ -43,7 +46,7 @@
 
 
     <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/green/pace-theme-minimal.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/style.css">
@@ -53,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2019/6 | 特立独行的小鱼儿</title>
+<title>Archives: 2019/6 | 小鱼儿</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -69,12 +72,14 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -96,11 +101,20 @@
             <img src="/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">特立独行の小鱼儿</a></h1>
+          <h1 class="header-author"><a href="/">小鱼儿</a></h1>
         </hgroup>
 
         
+        <p class="header-subtitle">小鱼儿</p>
+        
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -152,9 +166,11 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/archives/">主页</a></li>
+                            <li><a href="/">主页</a></li>
                         
                             <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
                         
@@ -163,11 +179,17 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="#" title="Email"></a>
+                                <a class="fa Email" href="/1334352808@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                                <a class="fa 新浪微博" href="/sina weibo" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/troublemaker121" title="GitHub"></a>
                             
                                 <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa SegmentFault" href="/" title="SegmentFault"></a>
+                            
+                                <a class="fa 网易云音乐" href="/netease" title="网易云音乐"></a>
                             
                         </ul>
                     </nav>
@@ -176,7 +198,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript、Promise/">Javascript、Promise</a></li></ul>
                     </div>
                 </section>
                 
@@ -211,7 +233,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">特立独行の小鱼儿</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">小鱼儿</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -219,15 +241,19 @@
                 <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">特立独行の小鱼儿</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">小鱼儿</a></h1>
             </hgroup>
+            
+            <p class="header-subtitle">小鱼儿</p>
             
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/archives/">主页</a></li>
+                    <li><a href="/">主页</a></li>
                 
                     <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
                 
                     <li><a href="/about/">关于我</a></li>
                 
@@ -237,11 +263,17 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="#" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="/1334352808@qq.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                                <a class="fa 新浪微博" target="_blank" href="/sina weibo" title="新浪微博"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/troublemaker121" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa SegmentFault" target="_blank" href="/" title="SegmentFault"></a>
+                            
+                                <a class="fa 网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a>
                             
                         </ul>
             </nav>
@@ -275,7 +307,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/19/promise/">Promise--异步</a>
+      <a class="archive-article-title" href="/2019/06/19/promise/">Promise</a>
     </h1>
   
 
@@ -283,6 +315,10 @@
           
 
           
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript、Promise/">Javascript、Promise</a></li></ul>
+    </div>
+
         </div>
         <div class="clearfix"></div>
     </header>
@@ -326,11 +362,14 @@
 
 </div>
       <footer id="footer">
-    <div class="outer">
+    <span id="busuanzi_container_site_uv">
+        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span>
+    <!-- <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2018-2019 特立独行の小鱼儿
+                2018-2019 小鱼儿
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
@@ -355,8 +394,11 @@
                 
             </div>
         
-    </div>
+    </div> -->
+
 </footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
     </div>
     
     <script src="/js/GithubRepoWidget.js"></script>

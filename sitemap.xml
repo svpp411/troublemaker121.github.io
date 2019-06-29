@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/06/19/promise/</loc>
+    <loc>xiaoyucode.top/2019/06/19/promise/</loc>
     
-    <lastmod>2019-06-19T12:01:07.229Z</lastmod>
+    <lastmod>2019-06-29T16:34:48.064Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/06/19/hello-world/</loc>
+    <loc>xiaoyucode.top/2019/06/19/hello-world/</loc>
     
-    <lastmod>2019-06-19T11:59:09.803Z</lastmod>
+    <lastmod>2019-06-29T16:31:48.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>xiaoyucode.top/about/index.html</loc>
+    
+    <lastmod>2019-06-29T16:29:04.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>xiaoyucode.top/404/index.html</loc>
+    
+    <lastmod>2019-06-29T16:27:12.453Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>xiaoyucode.top/tags/index.html</loc>
+    
+    <lastmod>2019-06-29T15:04:35.456Z</lastmod>
     
   </url>
   

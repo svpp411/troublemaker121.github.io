@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Promise</title>
+      <link href="/2019/06/19/promise/"/>
+      <url>/2019/06/19/promise/</url>
+      
+        <content type="html"><![CDATA[<!-- <Excerpt in index | 首页摘要>  --><a id="more"></a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">function</span> <span class="function"><span class="title">loadImg</span></span>()&#123;</span><br><span class="line">    const promise = new Promise(<span class="keyword">function</span>(resolve,reject)&#123;</span><br><span class="line">      var img = document.createElement(<span class="string">'img'</span>)</span><br><span class="line">&lt;The rest of contents | 余下全文&gt;</span><br><span class="line">      img.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        resolve(img)</span><br><span class="line">      &#125;</span><br><span class="line">      img.<span class="function"><span class="title">onerror</span></span>()&#123;</span><br><span class="line">        reject()</span><br><span class="line">      &#125;</span><br><span class="line">      img.src = src</span><br><span class="line">    &#125;)</span><br><span class="line">  <span class="built_in">return</span> promise</span><br><span class="line">&#125;</span><br><span class="line">var src = <span class="string">'https://www.imooc.com/static/img/index/logo.png'</span></span><br><span class="line">var result = loadImg(src)</span><br><span class="line">result.then(<span class="keyword">function</span>(img)&#123;</span><br><span class="line">  console.log(img.width)</span><br><span class="line">&#125;,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  console.log(<span class="string">'failed'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">result.then(<span class="keyword">function</span>(img)&#123;</span><br><span class="line">  console.log(img.height)</span><br><span class="line">&#125;,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  console.log(<span class="string">'failed'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Javascript、Promise </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天，你好！</title>
+      <link href="/2019/06/19/hello-world/"/>
+      <url>/2019/06/19/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Hexo 常用命令</p><a id="more"></a><h3 id="Create-a-new-post-–创建新文章"><a href="#Create-a-new-post-–创建新文章" class="headerlink" title="Create a new post –创建新文章"></a>Create a new post –创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h3 id="Run-server-–启动服务器"><a href="#Run-server-–启动服务器" class="headerlink" title="Run server       –启动服务器"></a>Run server       –启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="Generate-static-files-–生成静态文件"><a href="#Generate-static-files-–生成静态文件" class="headerlink" title="Generate static files –生成静态文件"></a>Generate static files –生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --生成静态文件</span><br></pre></td></tr></table></figure><h3 id="Deploy-to-remote-sites-–部署到远程站点"><a href="#Deploy-to-remote-sites-–部署到远程站点" class="headerlink" title="Deploy to remote sites –部署到远程站点"></a>Deploy to remote sites –部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --部署文章</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
