@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小鱼儿</title>
   
-  <subtitle>小鱼儿</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
@@ -39,7 +39,7 @@
     <link href="xiaoyucode.top/2019/06/19/hello-world/"/>
     <id>xiaoyucode.top/2019/06/19/hello-world/</id>
     <published>2019-06-19T09:31:04.129Z</published>
-    <updated>2019-06-29T16:31:48.793Z</updated>
+    <updated>2019-06-29T17:03:15.865Z</updated>
     
     <summary type="html">
     
