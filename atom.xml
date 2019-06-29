@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>特立独行的小鱼儿</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-06-19T12:01:07.229Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>特立独行の小鱼儿</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Promise--异步</title>
+    <link href="http://yoursite.com/2019/06/19/promise/"/>
+    <id>http://yoursite.com/2019/06/19/promise/</id>
+    <published>2019-06-19T10:07:42.000Z</published>
+    <updated>2019-06-19T12:01:07.229Z</updated>
+    
+    <content type="html"><![CDATA[<p>function loadImg(){<br>const promise = new Promise(function(resolve,reject){<br>    var img = document.createElement(‘img’)</p><a id="more"></a><pre><code>img.onload = function(){  resolve(img)}img.onerror(){  reject()}img.src = src</code></pre><p>  })<br>  return promise<br>}var src = ‘<a href="https://www.imooc.com/static/img/index/logo.png&#39;" target="_blank" rel="noopener">https://www.imooc.com/static/img/index/logo.png&#39;</a><br>var result = loadImg(src)<br>result.then(function(img){<br>  console.log(img.width)<br>},function(){<br>  console.log(‘failed’)<br>})</p><p>result.then(function(img){<br>  console.log(img.height)<br>},function(){<br>  console.log(‘failed’)<br>})</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;function loadImg(){&lt;br&gt;const promise = new Promise(function(resolve,reject){&lt;br&gt;    var img = document.createElement(‘img’)&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今天，你好！</title>
+    <link href="http://yoursite.com/2019/06/19/hello-world/"/>
+    <id>http://yoursite.com/2019/06/19/hello-world/</id>
+    <published>2019-06-19T09:31:04.129Z</published>
+    <updated>2019-06-19T11:59:09.803Z</updated>
+    
+    <content type="html"><![CDATA[<p>Code changes world!Javascript Html Css Vue Node Nuxt Koa</p><hr><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post-–创建新文章"><a href="#Create-a-new-post-–创建新文章" class="headerlink" title="Create a new post –创建新文章"></a>Create a new post –创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="Run-server-–启动服务器"><a href="#Run-server-–启动服务器" class="headerlink" title="Run server       –启动服务器"></a>Run server       –启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h3 id="Generate-static-files-–生成静态文件"><a href="#Generate-static-files-–生成静态文件" class="headerlink" title="Generate static files –生成静态文件"></a>Generate static files –生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --生成静态文件</span><br></pre></td></tr></table></figure><h3 id="Deploy-to-remote-sites-–部署到远程站点"><a href="#Deploy-to-remote-sites-–部署到远程站点" class="headerlink" title="Deploy to remote sites –部署到远程站点"></a>Deploy to remote sites –部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy --部署文章</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Code changes world!
+Javascript Html Css Vue Node Nuxt Koa&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post-–创建新文章&quot;&gt;&lt;a href=&quot;#Create-a-new-post-–创建新文章&quot; class=&quot;headerlink&quot; title=&quot;Create a new post –创建新文章&quot;&gt;&lt;/a&gt;Create a new post –创建新文章&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
