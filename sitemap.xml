@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>xiaoyucode.top/tags/index.html</loc>
+    
+    <lastmod>2019-07-02T00:41:05.315Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>xiaoyucode.top/2019/06/19/promise/</loc>
     
     <lastmod>2019-07-02T00:22:37.231Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>xiaoyucode.top/404/index.html</loc>
     
     <lastmod>2019-06-29T16:27:12.453Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>xiaoyucode.top/tags/index.html</loc>
-    
-    <lastmod>2019-06-29T15:04:35.456Z</lastmod>
     
   </url>
   
