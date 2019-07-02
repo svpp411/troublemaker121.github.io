@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
-  <updated>2019-06-29T16:34:48.064Z</updated>
+  <updated>2019-07-02T00:22:37.231Z</updated>
   <id>xiaoyucode.top/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="xiaoyucode.top/2019/06/19/promise/"/>
     <id>xiaoyucode.top/2019/06/19/promise/</id>
     <published>2019-06-19T10:07:42.000Z</published>
-    <updated>2019-06-29T16:34:48.064Z</updated>
+    <updated>2019-07-02T00:22:37.231Z</updated>
     
     <summary type="html">
     
-      &lt;!-- &lt;Excerpt in index | 首页摘要&gt;  --&gt;
+      &lt;p&gt;Promise是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。&lt;/p&gt;
+&lt;!-- &lt;Excerpt in index | 首页摘要&gt;  --&gt;
     
     </summary>
     
@@ -38,8 +39,8 @@
     <title>今天，你好！</title>
     <link href="xiaoyucode.top/2019/06/19/hello-world/"/>
     <id>xiaoyucode.top/2019/06/19/hello-world/</id>
-    <published>2019-06-19T09:31:04.129Z</published>
-    <updated>2019-06-29T17:03:15.865Z</updated>
+    <published>2019-06-19T10:00:07.000Z</published>
+    <updated>2019-07-02T00:18:06.638Z</updated>
     
     <summary type="html">
     
@@ -47,6 +48,8 @@
     
     </summary>
     
+    
+      <category term="hexo" scheme="xiaoyucode.top/tags/hexo/"/>
     
   </entry>
   
