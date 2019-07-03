@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
-  <updated>2019-07-02T00:22:37.231Z</updated>
+  <updated>2019-07-03T09:15:53.914Z</updated>
   <id>xiaoyucode.top/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ES6 Class语法</title>
+    <link href="xiaoyucode.top/2019/07/03/ES6/"/>
+    <id>xiaoyucode.top/2019/07/03/ES6/</id>
+    <published>2019-07-03T08:57:14.000Z</published>
+    <updated>2019-07-03T09:15:53.914Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一、Class语法：&lt;br&gt;    Class在语法上更加贴合面向对象的写法；Class实现继承更易读、易理解；本质是语法糖，使用了prototype。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="ES6、JavaScript、Class" scheme="xiaoyucode.top/tags/ES6%E3%80%81JavaScript%E3%80%81Class/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Promise</title>
     <link href="xiaoyucode.top/2019/06/19/promise/"/>
     <id>xiaoyucode.top/2019/06/19/promise/</id>
     <published>2019-06-19T10:07:42.000Z</published>
-    <updated>2019-07-02T00:22:37.231Z</updated>
+    <updated>2019-07-03T08:55:32.867Z</updated>
     
     <summary type="html">
     

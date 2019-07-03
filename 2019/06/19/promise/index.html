@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="小鱼儿">
 <meta property="og:description" content="Promise是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-02T00:22:37.231Z">
+<meta property="og:updated_time" content="2019-07-03T08:55:32.867Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise">
 <meta name="twitter:description" content="Promise是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。">
@@ -191,7 +191,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript、Promise/">Javascript、Promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6、JavaScript、Class/">ES6、JavaScript、Class</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript、Promise/">Javascript、Promise</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
                     </div>
                 </section>
                 
@@ -321,7 +321,7 @@
 <p>Promise实例生成后，可以用 then方法分别指定resolved状态和rejected状态的回调函数。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ promise.then(<span class="keyword">function</span>(value)&#123;</span><br><span class="line">    //success</span><br><span class="line">    &#125;,<span class="keyword">function</span>(error)&#123;</span><br><span class="line">    //failure</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
 
-<p>实例: 使用Promise分别获取图片的宽高</p>
+<p>二、使用Promise分别获取图片的宽高<br>  new Promise实例，而且要return，new Promise时要传入函数，函数有resolve reject两个参数，成功时执行resolve（）、失败时执行reject（）、<br>then监听结果  </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">function</span> <span class="function"><span class="title">loadImg</span></span>()&#123;</span><br><span class="line">    const promise = new Promise(<span class="keyword">function</span>(resolve,reject)&#123;</span><br><span class="line">      var img = document.createElement(<span class="string">'img'</span>)</span><br><span class="line">      img.onload = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        resolve(img)</span><br><span class="line">      &#125;</span><br><span class="line">      img.<span class="function"><span class="title">onerror</span></span>()&#123;</span><br><span class="line">        reject()</span><br><span class="line">      &#125;</span><br><span class="line">      img.src = src</span><br><span class="line">    &#125;)</span><br><span class="line">  <span class="built_in">return</span> promise</span><br><span class="line">&#125;</span><br><span class="line">var src = <span class="string">'https://www.imooc.com/static/img/index/logo.png'</span></span><br><span class="line">var result = loadImg(src)</span><br><span class="line">//获取图片的宽度</span><br><span class="line">result.then(<span class="keyword">function</span>(img)&#123;</span><br><span class="line">  console.log(img.width)</span><br><span class="line">&#125;,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  console.log(<span class="string">'failed'</span>)</span><br><span class="line">&#125;)</span><br><span class="line">//获取图片的高度</span><br><span class="line">result.then(<span class="keyword">function</span>(img)&#123;</span><br><span class="line">  console.log(img.height)</span><br><span class="line">&#125;,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  console.log(<span class="string">'failed'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 
@@ -335,7 +335,7 @@
         <p><span>本文标题:</span><a href="/2019/06/19/promise/">Promise</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">小鱼儿</a></p>
         <p><span>发布时间:</span>2019-06-19, 18:07:42</p>
-        <p><span>最后更新:</span>2019-07-02, 08:22:37</p>
+        <p><span>最后更新:</span>2019-07-03, 16:55:32</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/06/19/promise/" title="Promise">xiaoyucode.top/2019/06/19/promise/</a>
             <span class="copy-path" data-clipboard-text="原文: xiaoyucode.top/2019/06/19/promise/　　作者: 小鱼儿" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -349,6 +349,12 @@
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2019/07/03/ES6/">
+                    ES6 Class语法
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -443,7 +449,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2019/07/03/ES6/" title="上一篇: ES6 Class语法">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -455,7 +463,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/promise/">Promise</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/hello-world/">今天，你好！</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/03/ES6/">ES6 Class语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/promise/">Promise</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/hello-world/">今天，你好！</a></li></ul>
 
 
 
