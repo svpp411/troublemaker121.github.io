@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
-  <updated>2019-07-03T09:15:53.914Z</updated>
+  <updated>2019-07-03T14:23:17.688Z</updated>
   <id>xiaoyucode.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ES6 Class语法</title>
+    <title>Class语法</title>
     <link href="xiaoyucode.top/2019/07/03/ES6/"/>
     <id>xiaoyucode.top/2019/07/03/ES6/</id>
     <published>2019-07-03T08:57:14.000Z</published>
-    <updated>2019-07-03T09:15:53.914Z</updated>
+    <updated>2019-07-03T14:23:17.688Z</updated>
     
     <summary type="html">
     
@@ -54,11 +54,11 @@
   </entry>
   
   <entry>
-    <title>今天，你好！</title>
+    <title>Hexo + Github Pages + Yelee主题 + 阿里云域名搭建个人博客</title>
     <link href="xiaoyucode.top/2019/06/19/hello-world/"/>
     <id>xiaoyucode.top/2019/06/19/hello-world/</id>
     <published>2019-06-19T10:00:07.000Z</published>
-    <updated>2019-07-02T00:18:06.638Z</updated>
+    <updated>2019-07-06T18:08:41.361Z</updated>
     
     <summary type="html">
     

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>xiaoyucode.top/2019/06/19/hello-world/</loc>
+    
+    <lastmod>2019-07-06T18:08:41.361Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>xiaoyucode.top/2019/07/03/ES6/</loc>
     
-    <lastmod>2019-07-03T09:15:53.914Z</lastmod>
+    <lastmod>2019-07-03T14:23:17.688Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>xiaoyucode.top/tags/index.html</loc>
     
     <lastmod>2019-07-02T00:41:05.315Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>xiaoyucode.top/2019/06/19/hello-world/</loc>
-    
-    <lastmod>2019-07-02T00:18:06.638Z</lastmod>
     
   </url>
   
