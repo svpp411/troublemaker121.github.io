@@ -14,20 +14,19 @@
 <meta name="author" content="小鱼儿">
 
 
-    
-    
 
-
-<meta name="description" content="Javascript Vue CSS HTML">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小鱼儿">
-<meta property="og:url" content="xiaoyucode.top/index.html">
+<meta name="description" content="JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。">
+<meta name="keywords" content="原型链、prototype、__proto__">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何理解原型链中的prototype和__proto__？">
+<meta property="og:url" content="xiaoyucode.top/2019/07/07/prototype/index.html">
 <meta property="og:site_name" content="小鱼儿">
-<meta property="og:description" content="Javascript Vue CSS HTML">
+<meta property="og:description" content="JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-08T04:50:44.015Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小鱼儿">
-<meta name="twitter:description" content="Javascript Vue CSS HTML">
+<meta name="twitter:title" content="如何理解原型链中的prototype和__proto__？">
+<meta name="twitter:description" content="JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -55,13 +54,11 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-    <style> .article { opacity: 0;} </style>
-
 
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>小鱼儿</title>
+<title>如何理解原型链中的prototype和__proto__？ | 小鱼儿</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -70,8 +67,8 @@
     var yiliaConfig = {
         fancybox: true,
         animate: true,
-        isHome: true,
-        isPost: false,
+        isHome: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -275,9 +272,7 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-prototype" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-prototype" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2019/07/07/prototype/" class="article-date">
@@ -295,300 +290,128 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/07/prototype/">如何理解原型链中的prototype和__proto__？</a>
+    <h1 class="article-title" itemprop="name">
+      如何理解原型链中的prototype和__proto__？
     </h1>
   
 
       </header>
       
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+      <div class="article-info article-info-post">
+        
 
-      
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原型链、prototype、-proto/">原型链、prototype、__proto__</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2019/07/07/prototype/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ES6" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/07/03/ES6/" class="article-date">
-      <time datetime="2019-07-03T08:57:14.000Z" itemprop="datePublished">2019-07-03</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/03/ES6/">Class语法</a>
-    </h1>
-  
-
-      </header>
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p>一、Class语法：<br>    Class在语法上更加贴合面向对象的写法；Class实现继承更易读、易理解；本质是语法糖，使用了prototype。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+        <p>JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。</p>
+<a id="more"></a>
+<h3 id="一、什么是原型链？"><a href="#一、什么是原型链？" class="headerlink" title="一、什么是原型链？"></a>一、什么是原型链？</h3><p>&emsp;&emsp;谈到继承时，JavaScript只有一种结构：<strong>对象</strong>。 
+MDN文档上是这样说的：每个实例对象（object）都有一个私有属性（称之为<code>__proto__</code>）指向它的构造函数的原型对象（prototype）。该原型对象也有一个自己的原型对象（<code>__proto__</code>）,层层向上直到一个对象的原型对象为null。根据定义，null没有原型，并作为这个原型链中的最后一个环节。</p>
+<h3 id="二、换种方式理解原型链？"><a href="#二、换种方式理解原型链？" class="headerlink" title="二、换种方式理解原型链？"></a>二、换种方式理解原型链？</h3><p>&emsp;&emsp;之前在慕课网上，听过一个讲师举了一个很有趣的例子来介绍什么是prototype（当时偷偷的用手机截了图^o^）:<br>&emsp;&emsp;简单粗暴一点，我们把prototype理解成一个“备胎”,手艺还是祖传的。有一个姑娘不会修电脑，自己也不想学，就去找prototype说你学学吧，学好了帮我把修电脑这活儿做好,<br>prototype学会了修电脑之后,这个姑娘电脑有问题就会去找prototype,其他的姑娘再想修电脑时候，prototype这修电脑的技术也能直接拿出来用。<br>后来，又有姑娘请prototype帮忙诊个脉,prototype没有地方学,就往祖上一辈辈的问去，后来了解到他爷爷会诊脉，后来再有人找他诊脉，prototype就把病人带着找它爷爷。<br>再后来，又有一个姑娘让prototype给她造个机器人，prototype问遍了祖上，没人会这门技术，只能告诉这姑娘null了。</p>
+<h3 id="三、为什么需要原型和原型链？"><a href="#三、为什么需要原型和原型链？" class="headerlink" title="三、为什么需要原型和原型链？"></a>三、为什么需要原型和原型链？</h3><p>&emsp;&emsp;看一个小例子：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Person(name,age)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.age  = age;</span><br><span class="line">    this.eat  = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        console.log(age + <span class="string">"岁的"</span> + name + <span class="string">"在吃饭"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">let</span> p1 = new Person(<span class="string">"YQ"</span>,27);</span><br><span class="line"><span class="built_in">let</span> p2 = new Person(<span class="string">"YQ"</span>,27);</span><br><span class="line">console.log(p1.eat === p2.eat);  //<span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6、JavaScript、Class/">ES6、JavaScript、Class</a></li></ul>
-    </div>
+<p>&emsp;&emsp;我们发现上面的例子,对于同一个函数,我们可以通过new生成出来的实例,p1和p2的eat是不同的。我们想个办法，建立一个类似于共享库的对象，这样就可以在需要的时候，调用一个类似共享库的对象，让实例能够沿着某个“线索”去找到自己的归处。<br>这个“线索”就是我们的原型链 prototype。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> Person(name)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">&#125;</span><br><span class="line">//通过构造函数的Person的prototype属性找到Person的原型对象</span><br><span class="line">Person.prototype.eat = <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    console.log(<span class="string">"吃饭"</span>)；</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">let</span> p1 = new Person(<span class="string">"YQ"</span>,27);</span><br><span class="line"><span class="built_in">let</span> p2 = new Person(<span class="string">"于齐"</span>,27)</span><br><span class="line"></span><br><span class="line">console.log(p1.eat === p2.eat);//<span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
+<p>&emsp;通过分享的形式，这两个实例对象指向相同的位置了，也就是我们想要创建的共享库的对象。</p>
+<h3 id="四、prototype是什么玩意儿呢？"><a href="#四、prototype是什么玩意儿呢？" class="headerlink" title="四、prototype是什么玩意儿呢？"></a>四、prototype是什么玩意儿呢？</h3><p>知乎上有一篇文章（<a href="https://zhuanlan.zhihu.com/p/22989691）" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/22989691）</a> 写的很好，总结一下就是：<br>1、JavaScript本源是空的，即：null,这个就是JavaScript的“始祖”；</p>
+<p>2、null通过<code>__proto__</code>产生了NO1,即：<code>NO1.__proto__ == null</code>;  </p>
+<p>3、NO1根据自己的原型prototype创建了对象Object，即：<code>Object.prototype == NO1</code>;</p>
+<p>4、<code>NO1.__proto__ == null</code>,我们把prototype叫做原型，好比Object的原型是神，同时<strong>proto</strong>叫做原型链，有了这个<strong>proto</strong>，Object、NO1、JS之间才有联系，此时，<code>Object.prototype.__proto__ == null</code>，</p>
+<p>5、有几条公式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object.__proto__ === Function.prototype;</span><br><span class="line">Function.prototype.__proto__ === Object.prototype;</span><br><span class="line">Object.prototype.__proto__ === null;</span><br></pre></td></tr></table></figure>
       
-        <p class="article-more-link">
-          <a href="/2019/07/03/ES6/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-book" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/07/01/book/" class="article-date">
-      <time datetime="2019-07-01T02:22:43.000Z" itemprop="datePublished">2019-07-01</time>
-</a>
-
-
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/07/07/prototype/">如何理解原型链中的prototype和__proto__？</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">小鱼儿</a></p>
+        <p><span>发布时间:</span>2019-07-07, 16:53:05</p>
+        <p><span>最后更新:</span>2019-07-08, 12:50:44</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/07/07/prototype/" title="如何理解原型链中的prototype和__proto__？">xiaoyucode.top/2019/07/07/prototype/</a>
+            <span class="copy-path" data-clipboard-text="原文: xiaoyucode.top/2019/07/07/prototype/　　作者: 小鱼儿" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+
+
+
+    <nav id="article-nav">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/01/book/">我的书单--持续更新。。。</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>如果累了，就停下来看看书，冷静一下。</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/book/">book</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2019/07/01/book/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-promise" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/06/19/promise/" class="article-date">
-      <time datetime="2019-06-19T10:07:42.000Z" itemprop="datePublished">2019-06-19</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/19/promise/">Promise</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>Promise是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。</p>
-<!-- <Excerpt in index | 首页摘要>  -->
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript、Promise/">Javascript、Promise</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2019/06/19/promise/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/06/19/hello-world/" class="article-date">
-      <time datetime="2019-06-19T10:00:07.000Z" itemprop="datePublished">2019-06-19</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/07/03/ES6/">
+                    Class语法
+                </a>
+            </div>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/19/hello-world/">Hexo + Github Pages + Yelee主题 + 阿里云域名搭建个人博客</a>
-    </h1>
-  
+    </nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p>Hexo 常用命令</p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2019/06/19/hello-world/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、什么是原型链？"><span class="toc-number">1.</span> <span class="toc-text">一、什么是原型链？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、换种方式理解原型链？"><span class="toc-number">2.</span> <span class="toc-text">二、换种方式理解原型链？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、为什么需要原型和原型链？"><span class="toc-number">3.</span> <span class="toc-text">三、为什么需要原型和原型链？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、prototype是什么玩意儿呢？"><span class="toc-number">4.</span> <span class="toc-text">四、prototype是什么玩意儿呢？</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"如何理解原型链中的prototype和__proto__？　| 小鱼儿　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
 
 
 
@@ -596,9 +419,55 @@
 
 
 
+    
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'xiaoyucode.top/2019/07/07/prototype/';
+            this.page.identifier = '2019/07/07/prototype/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
 
-  
-  
+</section>
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/07/03/ES6/" title="下一篇: Class语法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/07/prototype/">如何理解原型链中的prototype和__proto__？</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/03/ES6/">Class语法</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/01/book/">我的书单--持续更新。。。</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/promise/">Promise</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/06/19/hello-world/">Hexo + Github Pages + Yelee主题 + 阿里云域名搭建个人博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <span id="busuanzi_container_site_uv">

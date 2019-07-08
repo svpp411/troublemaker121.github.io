@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
-  <updated>2019-07-03T14:23:17.688Z</updated>
+  <updated>2019-07-08T04:50:44.015Z</updated>
   <id>xiaoyucode.top/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何理解原型链中的prototype和__proto__？</title>
+    <link href="xiaoyucode.top/2019/07/07/prototype/"/>
+    <id>xiaoyucode.top/2019/07/07/prototype/</id>
+    <published>2019-07-07T08:53:05.000Z</published>
+    <updated>2019-07-08T04:50:44.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;JavaScript是动态的，本身不提供一个class实现。在ES2015/ES6中引入了class关键字，但那只是语法糖，JavaScript仍然是基于原型的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="原型链、prototype、__proto__" scheme="xiaoyucode.top/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE%E3%80%81prototype%E3%80%81-proto/"/>
+    
+  </entry>
   
   <entry>
     <title>Class语法</title>
