@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="xiaoyucode.top/"/>
-  <updated>2019-07-08T23:58:33.994Z</updated>
+  <updated>2019-07-09T17:08:08.460Z</updated>
   <id>xiaoyucode.top/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>防抖（debounce）和节流（throttling）</title>
+    <link href="xiaoyucode.top/2019/07/09/debounce-throttling/"/>
+    <id>xiaoyucode.top/2019/07/09/debounce-throttling/</id>
+    <published>2019-07-09T13:51:54.000Z</published>
+    <updated>2019-07-09T17:08:08.460Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;防抖（&lt;code&gt;debounce&lt;/code&gt;）  ：任务频繁触发情况下，只有任务触发的间隔超过指定间隔的时候，任务才会执行。&lt;br&gt;节流（&lt;code&gt;throttling&lt;/code&gt;）：指定时间间隔内只会执行一次任务。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>几个常用的Linux命令</title>
